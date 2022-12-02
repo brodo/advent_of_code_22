@@ -3,7 +3,7 @@ fn main() {
     let mut curr_sum:u32 = 0;
     let mut elfs = vec![];
     for line in input_str.lines() {
-        if line.is_ascii() {
+        if line.is_empty() {
             elfs.push(curr_sum);
             curr_sum = 0;
         } else {
